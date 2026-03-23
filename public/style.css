@@ -1,0 +1,101 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #1e1e2f;
+    color: #fafafa;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+#sidebar {
+    width: 20vw;
+    background: #2c2c44;
+    overflow-y: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+#breadcrumb {
+    margin-bottom: 15px;
+    font-size: 14px;
+    background: #3d3d55;
+    border-radius: 16px;
+    padding: 4px;
+}
+#breadcrumb span {
+    cursor: pointer;
+    color: #fafafa;
+}
+#breadcrumb span:hover {
+    text-decoration: underline;
+}
+
+.file-list {
+    flex: 1;
+}
+.folder,
+.file {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+.folder:hover,
+.file:hover {
+    background: #3a3a5a;
+}
+.folder {
+    font-weight: bold;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+#preview {
+    flex: 1;
+    padding: 1vw;
+    overflow: auto;
+    background: #1b1b2c;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#preview h2 {
+    margin-top: 0;
+}
+pre {
+    background: #222233;
+    padding: 12px;
+    border-radius: 6px;
+}
+video,
+audio,
+iframe {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+iframe {
+    height: 90vh;
+    width: 75vw;
+    border: none;
+}
+
+.button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #4b4b7a;
+    color: #eee;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.button:hover {
+    background: #5c5cad;
+}
