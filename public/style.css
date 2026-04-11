@@ -1,0 +1,134 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #1e1e2f;
+    color: #fafafa !important;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+#sidebar {
+    width: 20vw;
+    background: #2c2c44;
+    overflow-y: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+#switch {
+    font-size: 14px;
+    background: #3d3d55;
+    border-radius: 16px 16px 0 0;
+    padding: 4px;
+    cursor: pointer;
+}
+#socialsMenu {
+    background: #3d3d55;
+    padding: 0px;
+    font-size: 14px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0.3, 0.5, 0.5, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+#socialsMenu.active {
+    max-height: 80px;
+    padding: 4px;
+}
+#socialsMenu a {
+    text-decoration: none;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    color: #fafafa !important;
+}
+#socialsMenu a img {
+    max-height: 16px;
+    border-radius: 16px;
+    flex-basis: 16px;
+}
+#breadcrumb {
+    margin-bottom: 15px;
+    font-size: 14px;
+    background: #3d3d55;
+    border-radius: 0 0 16px 16px;
+    padding: 4px;
+    cursor: pointer;
+    min-width: 80%;
+}
+.file-list {
+    flex: 1;
+    background: #3d3d55;
+    border-radius: 16px;
+    overflow-y: auto;
+    padding: 4px;
+}
+.folder,
+.file {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+.folder:hover,
+.file:hover {
+    background: #4e4e66;
+}
+.folder {
+    font-weight: bold;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+#preview {
+    flex: 1;
+    padding: 1vw;
+    overflow: auto;
+    background: #1b1b2c;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#preview h2 {
+    margin-top: 0;
+}
+pre {
+    background: #222233;
+    padding: 12px;
+    border-radius: 6px;
+}
+video,
+audio,
+iframe {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+iframe {
+    height: 90vh;
+    width: 75vw;
+    border: none;
+}
+
+.button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #4b4b7a;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.button:hover {
+    background: #5c5cad;
+}
